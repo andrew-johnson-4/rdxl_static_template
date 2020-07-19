@@ -9,10 +9,10 @@ readme = "README.md"
 repository = "https://github.com/andrew-johnson-4/rdxl_static_template"
 
 [build-dependencies]
-rdxl_static = "0.0.8"
+rdxl_static = "0.0.10"
 
 [dependencies]
-rdxl_static = "0.0.8"
+rdxl_static = "0.0.10"
 
 [[bin]]
 name = "run"
