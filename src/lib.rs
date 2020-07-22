@@ -4,7 +4,7 @@ pub mod site;
 pub mod template;
 
 #[dot]
-fn index() -> DotHtml {
+fn index() -> String {
    dot_html!(
      <p>This will become index.html</p>
    )
