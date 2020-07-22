@@ -9,3 +9,12 @@ fn index() -> String {
      <p>This will become index.html</p>
    )
 }
+
+#[dot]
+fn page1() -> String {
+   dot_html!(
+      template=alternate1,
+      title="ABC".to_string(),
+      <p>This will become page1.html</p>
+   )
+}

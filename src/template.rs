@@ -13,3 +13,16 @@ pub fn default(title: String, description: String, xhtml: String) -> String {
      </html>
    )
 }
+
+#[dot_template]
+pub fn alternate1(title: String, description: String, xhtml: String) -> String {
+   xhtml!(
+     <html>
+       <head>
+         <title>{{ title }}</title>
+         <meta name="description" content={{description}}/>
+       </head>
+       <body>{{ xhtml }}</body>
+     </html>
+   )
+}
