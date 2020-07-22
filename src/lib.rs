@@ -1,6 +1,7 @@
 use rdxl_static::*;
 
 pub mod site;
+pub mod template;
 
 #[dot]
 fn index() -> DotHtml {
