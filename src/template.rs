@@ -17,6 +17,7 @@ pub fn default(title: String, description: String, xhtml: String) -> String {
 #[dot_template]
 pub fn alternate1(title: String, description: String, xhtml: String) -> String {
    xhtml!(
+     "<!DOCTYPE html>"
      <html>
        <head>
          <title>{{ title }}</title>
