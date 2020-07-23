@@ -14,7 +14,7 @@ fn index() -> String {
 fn page1() -> String {
    dot_html!(
       template=alternate1,
-      title="ABC".to_string(),
+      title="ABC",
       <p>This will become page1.html</p>
    )
 }
