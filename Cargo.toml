@@ -11,5 +11,5 @@ repository = "https://github.com/andrew-johnson-4/rdxl_static_template"
 [dependencies]
 ctor = "0.1"
 rdxl = "0.5.11"
-rdxl_static = "0.0.36"
+rdxl_static = "0.0.37"
 

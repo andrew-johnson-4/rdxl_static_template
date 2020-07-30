@@ -2,18 +2,16 @@ use rdxl_static::*;
 
 pub mod template;
 
-#[dot]
-pub fn index() -> String {
-   dot_html!(
-      <p>This will become index.html</p>
-   )
+#[test]
+pub fn index() {
+   let (fp,f) = dot_include!("pages/index.html");
+   assert_eq!(fp, "www/index.html");
+   assert!(f().starts_with("<html>"));
 }
 
-#[dot]
-pub fn page1() -> String {
-   dot_html!(
-      template=alternate1,
-      title="ABC",
-      <p>This will become page1.html</p>
-   )
+#[test]
+pub fn page1() {
+   let (fp,f) = dot_include!("pages/page1.html");
+   assert_eq!(fp, "www/page1.html");
+   assert!(f().starts_with("<!DOCTYPE html>"));
 }
