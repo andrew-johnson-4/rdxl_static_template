@@ -1,14 +1,14 @@
 use rdxl_static::*;
 
 #[dot]
-fn index() -> String {
+pub fn index() -> String {
    dot_html!(
      <p>This will become index.html</p>
    )
 }
 
 #[dot]
-fn page1() -> String {
+pub fn page1() -> String {
    dot_html!(
       template=alternate1,
       title="ABC",
