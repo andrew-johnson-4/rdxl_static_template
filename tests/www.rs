@@ -1,9 +1,10 @@
 use rdxl_static::*;
 
+pub mod template;
+
 #[dot]
 pub fn index() -> String {
    dot_html!(
-      template=rdxl_static_template::template::default,
       <p>This will become index.html</p>
    )
 }
@@ -11,7 +12,7 @@ pub fn index() -> String {
 #[dot]
 pub fn page1() -> String {
    dot_html!(
-      template=rdxl_static_template::template::alternate1,
+      template=alternate1,
       title="ABC",
       <p>This will become page1.html</p>
    )
