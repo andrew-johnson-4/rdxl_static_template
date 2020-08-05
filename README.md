@@ -2,5 +2,5 @@
 Template for RDXL Static Site Generation
 
 ```rust
-cargo run
+cargo test
 ```
